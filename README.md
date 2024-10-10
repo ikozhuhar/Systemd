@@ -20,7 +20,7 @@
 
 | Command | Description |
 | ------- | ----------- |
-| `git status` | text text text text |
+| `service` | text text text text |
 | `lern text` | some text, some text, some text |
 | `lern text text` | some text, some text, some text, some text, some text, some text |
 | `lern text` | some text, some text, some text |
@@ -35,7 +35,7 @@
 
 | Command | Description |
 | ------- | ----------- |
-| `git status` | text text text text |
+| `git status` | Служба (сервис, демон), которую нужно запустить. Пример имени модуля: network.service. Изначально systemd поддерживала сценарии SysV (чтобы управлять сервисами можно service было как при использовании init), но в последнее время в каталоге /etc/init.d систем, которые используют systemd, практически пусто (или вообще пусто), а управление сервисами осуществляется только посредством systemd |
 | `lern text` | some text, some text, some text |
 | `lern text text` | some text, some text, some text, some text, some text, some text |
 | `lern text` | some text, some text, some text |
