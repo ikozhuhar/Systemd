@@ -8,20 +8,38 @@
 
 
 
-#### 1. [[⬆]](#toc) <a name='availability'>Смотрим наличие LVM</a>
+#### 1. [[⬆]](#toc) <a name='availability'>Система инициализации</a>
 
-#####  Физические разделы
+##### Принцип работы
 &&&&&&&&&&&&&&&&&&&&&
 
-#####  Группы разделов
+##### Конфигурационные файлы systemd
 &&&&&&&&&&&&&&&&&&&&&
 
+##### Типы модулей системы инициализации systemd
+
+| Command | Description |
+| ------- | ----------- |
+| `git status` | text text text text |
+| `lern text` | some text, some text, some text |
+| `lern text text` | some text, some text, some text, some text, some text, some text |
+| `lern text` | some text, some text, some text |
+| `lern text` | some text, some text, some text |
+
+##### Цели
 
 
-#### 2. [[⬆]](#toc) <a name='creating_physical_lvm'>Создание физических LVM разделов</a>
+#### 2. [[⬆]](#toc) <a name='creating_physical_lvm'>Управление сервисами при использовании systemd</a>
 
-##### Создание физического раздела
-&&&&&&&&&&&&&&&&&&&&&
+##### Параметры программы systemctl
+
+| Command | Description |
+| ------- | ----------- |
+| `git status` | text text text text |
+| `lern text` | some text, some text, some text |
+| `lern text text` | some text, some text, some text, some text, some text, some text |
+| `lern text` | some text, some text, some text |
+| `lern text` | some text, some text, some text |
 
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
