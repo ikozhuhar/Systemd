@@ -81,11 +81,15 @@ sudo systemctl daemon-reload
 
 #### 2. [[⬆]](#toc) <a name='managing_services'>Управление сервисами при использовании systemd</a>
 
+В systemd целью большинства действий являются «юниты/модули», являющиеся ресурсами, которыми systemd знает, как управлять. Модули распределяются по категориям по типу ресурса, который они представляют, и определяются файлами, известными как файлы модулей. 
+
+Systemd содержит инструмент `systemctl`, который позволяет управлять работой служб: запускать и останавливать, проверять состояние, обновлять конфигурацию и т.д.
+
 ##### Параметры программы systemctl
 
 | Command | Description |
 | ------- | ----------- |
-| `git status` | рьирлорплопрл |
+| `systemctl start <uмя.service>` | запускает сервис |
 | `lern text` | some text, some text, some text |
 | `lern text text` | some text, some text, some text, some text, some text, some text |
 | `lern text` | some text, some text, some text |
