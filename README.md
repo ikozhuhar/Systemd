@@ -72,10 +72,11 @@ sudo systemctl daemon-reload
 | `graphical.target (щnleve15.target)` | многопользовательский режим с графическим интерфейсом |
 | `reboot.target (runlevel6.target)` | завершение работы и перезагрузка системы |
 
-Управление службами осуществляется с помощью программы systemctl
-1. systemctl halt - останавливает систему
-2. systemctl poweroff- выключает систему
-3. systemctl reboot - перезагружает систему
+Управление службами осуществляется с помощью программы systemctl. Например:
+
+1. `systemctl start <uмя.service>` - запускает сервис
+2. `systemctl stop <uмя.service>` - останавливает сервис
+3. `systemctl restart <uмя.service>` - перезапускает сервис
 
 
 #### 2. [[⬆]](#toc) <a name='managing_services'>Управление сервисами при использовании systemd</a>
