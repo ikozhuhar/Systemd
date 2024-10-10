@@ -69,7 +69,7 @@ sudo systemctl daemon-reload
 | `poweroff.target (runlevelO.target)` | завершение работы и отключение системы |
 | `rescue.target (runlevell .target)` | однопользовательский режим, среда восстановления |
 | `multi-user.target (runlevel2.target, runlevel3.target, runlevel4.target)` | многопользовательский режим, без графического интерфейса |
-| `graphical.target (щnleve15.target)` | многопользовательский режим с графическим интерфейсом |
+| `graphical.target (runlevel5.target)` | многопользовательский режим с графическим интерфейсом |
 | `reboot.target (runlevel6.target)` | завершение работы и перезагрузка системы |
 
 Управление службами осуществляется с помощью программы systemctl. Например:
