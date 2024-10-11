@@ -87,13 +87,28 @@ Systemd содержит инструмент `systemctl`, который поз
 
 ##### Параметры программы systemctl
 
-| Command | Description |
+| Параметр | Описание |
 | ------- | ----------- |
 | `systemctl start <uмя.service>` | запускает сервис |
-| `lern text` | some text, some text, some text |
-| `lern text text` | some text, some text, some text, some text, some text, some text |
-| `lern text` | some text, some text, some text |
-| `lern text` | some text, some text, some text |
+| `systemctl stop <uмя.service>` | останавливает сервис  |
+| `systemctl restart <uмя.service>` | перезапускает сервис  |
+| `systemctl try-restart <uмя.service>` | перезапуск сервиса, только если он запущен  |
+| `systemctl reload <uмя.service>` | перезагружает конфигурацию сервиса  |
+| `systemctl status <uмя.service>` | отображает подробное состояние сервиса |
+| `systemctl is-active <uмя.service>` | отображает только строку active (сервис запущен) или inactive (остановлен) |
+| `systemctl list-units --type service --all` | выводит состояние всех сервисов |
+| `systemctl епаblе <uмя.service>` | включает сервис (обеспечивает его автоматический запуск) |
+| `systemctl disable <uмя.service>` | отключает сервис (сервис не будет автоматически запускаться при запуске системы) |
+| `systemctl rееnаblе <uмя.service>` | деактивирует сервис и сразу его нспользует |
+| `systemctl list-unit-files --type service` | Выводит список всех сервисов и сообщает, какие из них активированы, а какие - нет |
+
+Примеры:
+```
+sudo systemctl start httpd.service
+sudo systemctl stop httpd
+```
+
+Первая команда запускает сервис httpd (веб-сервер), вторая - останавливает. Обратите внимание, что ".service" можно не указывать.
 
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
