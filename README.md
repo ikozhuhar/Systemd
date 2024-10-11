@@ -67,7 +67,7 @@ sudo systemctl daemon-reload
 | Путь | Описание |
 | ------- | ----------- |
 | `poweroff.target (runlevelO.target)` | завершение работы и отключение системы |
-| `rescue.target (runlevell .target)` | однопользовательский режим, среда восстановления |
+| `rescue.target (runlevel1.target)` | однопользовательский режим, среда восстановления |
 | `multi-user.target (runlevel{2,3,4}.target)` | многопользовательский режим, без графического интерфейса |
 | `graphical.target (runlevel5.target)` | многопользовательский режим с графическим интерфейсом |
 | `reboot.target (runlevel6.target)` | завершение работы и перезагрузка системы |
