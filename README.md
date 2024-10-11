@@ -113,7 +113,7 @@ sudo systemctl stop httpd
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
-1. [Systemd - Википедия]([https://ru.wikipedia.org/wiki/Systemd)
+1. [Systemd - Википедия](https://ru.wikipedia.org/wiki/Systemd)
 2. [????????????????](https://www.alexgur.ru/articles/2275/)
 3. [????????????????](https://losst.pro/nastrojka-zagruzchika-grub)
 4. Весь Linux Для тех, кто хочет стать профессионалом, стр.324
