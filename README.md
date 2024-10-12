@@ -249,10 +249,9 @@ sudo systemctl status nginx@second
 
 ##### Проверить можно несколькими способами, например, посмотреть, какие порты слушаются:
 ```
-ss -tnulp | grep nginx
-ps afx | grep nginx
+sudo netstat -tunlp | grep nginx
 ```
-![image](https://github.com/user-attachments/assets/a9402a96-63db-4c3e-821e-6857ee6008bb)
+![image](https://github.com/user-attachments/assets/a92d51d5-719c-4bd9-8810-564fee3e4a6b)
 
 ##### Смотрим список процессов
 ```
