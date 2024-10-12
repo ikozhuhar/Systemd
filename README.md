@@ -159,7 +159,7 @@ sudo nano /var/log/watchlog.log
 ```
 ![image](https://github.com/user-attachments/assets/03edf7c8-ba4e-4504-85cf-3080f9ae6814)
 
-##### Создадим скрипт и сделаем файл исполняемым
+##### Создадим скрипт и сделаем файл исполняемым. Команда logger отправляет лог в системный журнал.
 ```
 sudo nano /opt/watchlog.sh
 sudo chmod +x /opt/watchlog.sh
