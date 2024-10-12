@@ -234,7 +234,7 @@ sudo nano /etc/systemd/system/nginx@.service
 sudo nano /etc/nginx/nginx-first.conf
 sudo nano /etc/nginx/nginx-second.conf
 ```
-![image](https://github.com/user-attachments/assets/890d8618-3d13-45e3-8871-507489a57692)
+![image](https://github.com/user-attachments/assets/890d8618-3d13-45e3-8871-507489a57692)  
 ![image](https://github.com/user-attachments/assets/6b04aa47-ba2b-4606-9b38-1b56315a19e8)
 
 _Этого достаточно для успешного запуска сервисов._
