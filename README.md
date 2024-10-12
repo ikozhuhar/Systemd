@@ -245,7 +245,7 @@ sudo systemctl start nginx@first
 sudo systemctl start nginx@second
 sudo systemctl status nginx@second
 ```
-![image](https://github.com/user-attachments/assets/2e317441-0dfc-46d1-a013-b49d5783a891)
+![image](https://github.com/user-attachments/assets/a36c6ce2-04ef-499d-9b9a-7b54614fc54c)
 
 ##### Проверить можно несколькими способами, например, посмотреть, какие порты слушаются:
 ```
