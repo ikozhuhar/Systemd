@@ -248,7 +248,7 @@ sudo systemctl status nginx@second
 ![image](https://github.com/user-attachments/assets/a36c6ce2-04ef-499d-9b9a-7b54614fc54c)
 
 ##### Проверить можно несколькими способами, например, посмотреть, какие порты слушаются:
-_Если сервисы не стартуют, смотрим их статус, ищем ошибки, проверяем ошибки в /var/log/nginx/error.log, а также в journalctl -u nginx@first._
+_Если сервисы не стартуют, смотрим статус, ищем ошибки в `/var/log/nginx/error.log`, а также `journalctl -u nginx@first`._
 ```
 sudo netstat -tunlp | grep nginx
 ```
