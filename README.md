@@ -128,12 +128,12 @@ Systemd содержит инструмент `systemctl`, который поз
 | `systemctl reload <uмя.service>` | перезагружает конфигурацию сервиса  |
 | `systemctl status <uмя.service>` | отображает подробное состояние сервиса |
 | `systemctl is-active <uмя.service>` | отображает только строку active (сервис запущен) или inactive (остановлен) |
-| `systemctl list-units --type service --all` | выводит состояние всех сервисов |
 | `systemctl епаblе <uмя.service>` | включает сервис (обеспечивает его автоматический запуск) |
 | `systemctl disable <uмя.service>` | отключает сервис (сервис не будет автоматически запускаться при запуске системы) |
 | `systemctl rееnаblе <uмя.service>` | деактивирует сервис и сразу его использует |
 | `systemctl list-units` | Выводит список всех сервисов |
 | `systemctl list-unit-files --type service` | Выводит список всех сервисов и сообщает, какие из них активированы, а какие - нет |
+| `systemctl list-units --type service --all` | выводит состояние всех сервисов |
 | `systemctl list-sockets` | Выводит список всех служб сокетов |
 
 Примеры:
