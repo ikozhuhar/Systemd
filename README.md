@@ -7,7 +7,10 @@
 3. [Systemd — создание unit-файла]() 
 4. [Дополнительные источники](#recommended_sources)
 
-![image](https://github.com/user-attachments/assets/bf0dc3c4-33bd-4b8b-880c-035a67aaacf3)
+#### Компоненты Systemd
+
+![image](https://github.com/user-attachments/assets/3fd0eec6-a65d-4da9-b32b-955481338a37)
+
 
 #### 1. [[⬆]](#toc) <a name='initialization_system'>Система инициализации</a>
 
