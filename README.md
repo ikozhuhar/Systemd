@@ -263,6 +263,7 @@ sudo ps afx | grep nginx
 #### 5. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
 1. [Systemd - Википедия](https://ru.wikipedia.org/wiki/Systemd)
-2. [????????????????](https://www.alexgur.ru/articles/2275/)
-3. [????????????????](https://losst.pro/nastrojka-zagruzchika-grub)
-4. Весь Linux Для тех, кто хочет стать профессионалом, стр.324
+2. [Система инициализации - systemd](https://basis.gnulinux.pro/ru/latest/basis/34/34._%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_-_systemd.html#systemd)
+3. [Systemd. Библия сисадмина](https://habr.com/ru/companies/timeweb/articles/824146/)
+4. [Что такое система инициализации](https://pikabu.ru/story/sistema_initsializatsii_5191339)
+5. Весь Linux Для тех, кто хочет стать профессионалом, стр.324
