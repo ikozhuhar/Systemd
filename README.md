@@ -227,12 +227,29 @@ sudo apt install nginx -y
 ```
 sudo nano /etc/systemd/system/nginx@.service
 ```
+![image](https://github.com/user-attachments/assets/712d2810-eeca-4618-b1a0-4b76fd9a1364)
 
-##### 
-##### 
-##### 
-##### 
+##### Создаем два файла конфигурации (/etc/nginx/nginx-first.conf, /etc/nginx/nginx-second.conf)
+```
+sudo nano /etc/nginx/nginx-first.conf
+sudo nano /etc/nginx/nginx-second.conf
+```
+![image](https://github.com/user-attachments/assets/890d8618-3d13-45e3-8871-507489a57692)
+![image](https://github.com/user-attachments/assets/6b04aa47-ba2b-4606-9b38-1b56315a19e8)
 
+_Этого достаточно для успешного запуска сервисов._
+
+##### Проверяем работу
+```
+sudo systemctl start nginx@first
+sudo systemctl start nginx@second
+sudo systemctl status nginx@second
+```
+##### Проверить можно несколькими способами, например, посмотреть, какие порты слушаются:
+```
+ss -tnulp | grep nginx
+ps afx | grep nginx
+```
 
 #### 5. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
