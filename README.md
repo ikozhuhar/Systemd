@@ -159,13 +159,29 @@ sudo nano /var/log/watchlog.log
 ```
 ![image](https://github.com/user-attachments/assets/03edf7c8-ba4e-4504-85cf-3080f9ae6814)
 
-##### Создадим скрипт
+##### Создадим скрипт и сделаем файл исполняемым
 ```
 sudo nano /opt/watchlog.sh
+sudo chmod +x /opt/watchlog.sh
 ```
 ![image](https://github.com/user-attachments/assets/898c53fe-df12-4d8e-8ce3-41a3257d7c4c)
 
+##### Создадим юнит для сервиса
+```
+sudo nano /etc/systemd/system/watchlog.service
+```
+![image](https://github.com/user-attachments/assets/967748f1-4235-4737-b721-db4446f5baa7)
 
+##### Создадим юнит для таймера
+```
+sudo nano /etc/systemd/system/watchlog.timer
+```
+![image](https://github.com/user-attachments/assets/0b773d98-1d2e-4a8a-b700-d18bd3ed4f36)
+
+После всех этих действий достаточно запустить таймер, а он уже запустит сам сервис
+```
+sudo systemctl start watchlog.timer
+```
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
