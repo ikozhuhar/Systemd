@@ -9,8 +9,7 @@
 
 #### Компоненты Systemd
 
-![image](https://github.com/user-attachments/assets/03cc8ccb-aef7-4f96-a806-6beb154764f7)
-
+![Systemd_components](https://github.com/user-attachments/assets/07e37ebf-f448-40dc-810f-d9323cb45010)
 
 
 #### 1. [[⬆]](#toc) <a name='initialization_system'>Система инициализации</a>
