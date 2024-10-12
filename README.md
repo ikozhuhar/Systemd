@@ -4,8 +4,9 @@
 
 1. [Система инициализации](#initialization_system)
 2. [Управление сервисами при использовании systemd](#managing_services)
-3. [Создание unit-файла для мониторинга логов](#create_unit_file) 
-4. [Дополнительные источники](#recommended_sources)
+3. [Создание unit-файла для мониторинга логов](#create_unit_file)
+4. [Установить spawn-fcgi и создать unit-файл](#create_init_spawn)
+5. [Дополнительные источники](#recommended_sources)
 
 #### Компоненты Systemd
 
@@ -189,7 +190,51 @@ tail -n 1000 /var/log/syslog  | grep word
 ![image](https://github.com/user-attachments/assets/cd681d67-a9ea-4134-b8de-641ee0e00ad8)
 
 
-#### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
+
+#### 4. [[⬆]](#toc) <a name='create_init_spawn'>Установить spawn-fcgi и создать unit-файл]</a>
+
+##### Установить spawn-fcgi и создать unit-файл (spawn-fcgi.sevice) с помощью переделки init-скрипта
+```
+apt install spawn-fcgi php php-cgi php-cli apache2 libapache2-mod-fcgid -y
+```
+
+##### Создать файл с настройками для будущего сервиса в файле `/etc/spawn-fcgi/fcgi.conf`
+```
+sudo nano /etc/spawn-fcgi/fcgi.conf
+```
+![image](https://github.com/user-attachments/assets/6d9040e8-44d4-4f39-b91d-fff80006808d)
+
+##### Создадим юнит для сервиса
+```
+sudo nano /etc/systemd/system/spawn-fcgi.service
+```
+![image](https://github.com/user-attachments/assets/c74f432f-713a-4fd6-8441-8d820420954f)
+
+##### Убеждаемся, что все успешно работает
+```
+sudo systemctl start spawn-fcgi
+sudo systemctl status spawn-fcgi
+```
+![image](https://github.com/user-attachments/assets/e2ae86ca-fd1a-4459-aded-4857a3407646)
+
+Доработать unit-файл Nginx (nginx.service) для запуска нескольких инстансов сервера с разными конфигурационными файлами одновременно
+
+##### Установим Nginx из стандартного репозитория
+```
+sudo apt install nginx -y
+```
+##### Создадим юнит для для работы с шаблонами
+```
+sudo nano /etc/systemd/system/nginx@.service
+```
+
+##### 
+##### 
+##### 
+##### 
+
+
+#### 5. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
 1. [Systemd - Википедия](https://ru.wikipedia.org/wiki/Systemd)
 2. [????????????????](https://www.alexgur.ru/articles/2275/)
