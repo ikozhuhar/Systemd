@@ -178,10 +178,16 @@ sudo nano /etc/systemd/system/watchlog.timer
 ```
 ![image](https://github.com/user-attachments/assets/0b773d98-1d2e-4a8a-b700-d18bd3ed4f36)
 
-После всех этих действий достаточно запустить таймер, а он уже запустит сам сервис
+_После всех этих действий достаточно запустить таймер, а он уже сам запустит сам сервис_
 ```
 sudo systemctl start watchlog.timer
 ```
+_Проверяем_
+```
+tail -n 1000 /var/log/syslog  | grep word
+```
+![image](https://github.com/user-attachments/assets/cd681d67-a9ea-4134-b8de-641ee0e00ad8)
+
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
