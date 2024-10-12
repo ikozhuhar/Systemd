@@ -4,7 +4,7 @@
 
 1. [Система инициализации](#initialization_system)
 2. [Управление сервисами при использовании systemd](#managing_services)
-3. [Systemd — создание unit-файла]() 
+3. [Systemd — создание unit-файла](#create_unit_file) 
 4. [Дополнительные источники](#recommended_sources)
 
 #### Компоненты Systemd
@@ -141,8 +141,30 @@ Systemd содержит инструмент `systemctl`, который поз
 sudo systemctl start httpd.service
 sudo systemctl stop httpd
 ```
-
 Первая команда запускает сервис httpd (веб-сервер), вторая - останавливает. Обратите внимание, что "`.service`" можно не указывать. Раньше, чтобы отключить службу на определенном уровне запуска, нужно было удалить ее символическую ссылку из определенного каталога. Аналогично, чтобы служба запускалась на определенном уровне запуска (например, в графическом режиме), нужно бьло создать символическую ссьшку. Сейчас всего этого нет, а есть только команды епаblе и disable, что гораздо удобнее. 
+
+
+#### 2. [[⬆]](#toc) <a name='create_unit_file'>Systemd — создание unit-файла</a>
+Напишем service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова
+
+##### Cоздаём файл с конфигурацией для сервиса
+```
+sudo nano /etc/default/watchlog
+```
+![image](https://github.com/user-attachments/assets/c1b95428-4be5-4bcf-8b6d-e655ceb20699)
+
+##### Создаем файл /var/log/watchlog.log, пишем туда строки на своё усмотрение, плюс ключевое слово ‘ALERT’
+```
+sudo nano /var/log/watchlog.log
+```
+![image](https://github.com/user-attachments/assets/03edf7c8-ba4e-4504-85cf-3080f9ae6814)
+
+##### Создадим скрипт
+```
+sudo nano /opt/watchlog.sh
+```
+![image](https://github.com/user-attachments/assets/898c53fe-df12-4d8e-8ce3-41a3257d7c4c)
+
 
 
 #### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
