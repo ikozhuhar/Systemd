@@ -245,11 +245,21 @@ sudo systemctl start nginx@first
 sudo systemctl start nginx@second
 sudo systemctl status nginx@second
 ```
+![image](https://github.com/user-attachments/assets/2e317441-0dfc-46d1-a013-b49d5783a891)
+
 ##### Проверить можно несколькими способами, например, посмотреть, какие порты слушаются:
 ```
 ss -tnulp | grep nginx
 ps afx | grep nginx
 ```
+![image](https://github.com/user-attachments/assets/a9402a96-63db-4c3e-821e-6857ee6008bb)
+
+##### Смотрим список процессов
+```
+sudo ps afx | grep nginx
+```
+![image](https://github.com/user-attachments/assets/b348826e-39ef-49ec-b6ba-12aa5bc8a9a4)
+
 
 #### 5. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
 
