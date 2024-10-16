@@ -105,6 +105,12 @@ sudo systemctl daemon-reload
 | `graphical.target (runlevel5.target)` | многопользовательский режим с графическим интерфейсом |
 | `reboot.target (runlevel6.target)` | завершение работы и перезагрузка системы |
 
+Пример использования
+```
+sudo systemctl get-default
+sudo systemctl set-default multi-user.target
+sudo systemctl set-default graphical.target
+```
 Управление службами осуществляется с помощью программы systemctl. Например:
 
 1. `systemctl start <uмя.service>` - запускает сервис
